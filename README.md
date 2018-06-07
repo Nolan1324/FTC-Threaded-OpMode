@@ -5,17 +5,17 @@ A library for FTC Java programming that makes multi threading easy.
 2. Drag the folder `threadopmode` into the `org.firstinspires.ftc.teamcode` package of your `TeamCode` module
 ## How to use
 1. Add the namespace to the top of your program
-```
+```java
 import org.firstinspires.ftc.teamcode.threadopmode.*;
 ```
 2. Have your class extend `ThreadOpMode` rather than `OpMode`
-```
+```java
 public class ExampleOpMode extends ThreadOpMode {
   ...
 }
 ```
 3. Override the `mainInit` and `mainLoop` methods
-```
+```java
 @Override
 public void mainInit() {
 
@@ -28,7 +28,7 @@ public void mainLoop() {
 ```
 3. Add regular `init` code to `mainInit`
 4. Create a new thread in `mainInit` using the following template
-```
+```java
 registerThread(new TaskThread(new TaskThread.Actions() {
     @Override
     public void loop() {
@@ -38,7 +38,7 @@ registerThread(new TaskThread(new TaskThread.Actions() {
 ```
 5. Repeat this for as many threads as you want to spawn
 6. (Optional) add code to the main thread in `mainLoop`
-```
+```java
 @Override
 public void mainLoop() {
     //Anything you want to periodically run in the MAIN thread goes here
