@@ -1,7 +1,6 @@
 package org.firstinspires.ftc.teamcode.threadopmode.examples;
 
-import com.nolankuza.threadopmode.TaskThread;
-import com.nolankuza.threadopmode.ThreadOpMode;
+import org.firstinspires.ftc.teamcode.threadopmode.*;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 //Extend ThreadOpMode rather than OpMode
